@@ -1,4 +1,4 @@
-##YelpCamp
+# YelpCamp
 
 ## Initial Setup
 * Add Landing Page
@@ -16,7 +16,7 @@
 * Add in body-parser
 * Setup route to show form
 * Add basic unstyled form
-*
+
 
 # Style the campgrounds page
 * Add a better header/title
@@ -26,7 +26,7 @@
 * Add a navbar to all templates
 * Style the new campground form
 
-#Add Mongoose
+# Add Mongoose
 * Install and configure mongoose
 * Setup campground model
 * Use campground model inside of our routes
@@ -73,7 +73,7 @@
 * Add public directory
 * Add custom stylesheet
 
-### Authorization
+# Authorization
 
 # Auth Pt. 1 Add User Model
 * Install all packages needed for auth
@@ -127,14 +127,14 @@
 * Add Edit route for comments
 * Add Edit Comment button
 * Add Update Comment route
-  <!-- /campgrounds/:id/edit --> req.params.id + /edit
-  <!-- /campgrounds/:id/comments/:comment_id/edit--> req.params.comment_id
+  * /campgrounds/:id/edit --> req.params.id + /edit
+  * /campgrounds/:id/comments/:comment_id/edit--> req.params.comment_id
 
 # Deleting Comments
 * Add Destroy Route
 * Add Delete Button
-    <!--Campgrounds Destroy Route: /campgrounds/:id                    = req.params.id-->
-    <!--Comments Destroy Route: /campgrounds/:id/comments/:comment_id  = req.params.comment_id-->
+    * Campgrounds Destroy Route: /campgrounds/:id                    = req.params.id
+    * Comments Destroy Route: /campgrounds/:id/comments/:comment_id  = req.params.comment_id
 
 # Authorization Part 2: Comments
 * User can only edit his/her comments
