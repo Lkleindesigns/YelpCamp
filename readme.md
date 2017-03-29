@@ -1,13 +1,12 @@
-#YelpCamp
+##YelpCamp
 
 ## Initial Setup
 * Add Landing Page
 * Add Campgrounds Page that lists all campgrounds
-
-Each campground has:
+* Each campground has:
     * Name
     * Image
-    
+
 # Layout and Basic Styling
 * Create header and footer partials
 * Add in Bootstrap
@@ -38,17 +37,6 @@ Each campground has:
 * Show db.collection.drop()
 * Add a show route/template
 
-RESTFUL ROUTES
-name     url              verb      Description
-==============================================
-INDEX    /dogs            GET       Dsiplay a list of all dogs
-NEW      /dogs/new        GET       Displays form to make a new dog
-CREATE   /dogs            POST      Add new dog to DB
-SHOW     /dogs/:id        GET       Shows info about one dog
-EDIT     /dogs/:id/edit   GET       Shows edit form for specific ID
-UPDATE   /dogs/:id        PUT       Updates a dog, then redirects
-DESTROY  /odgs/:id        DELETE    Delete a particular dog, then redirect
-
 # Refactor Mongoose code
 * Create a models dir
 * use module.exports
@@ -69,7 +57,7 @@ DESTROY  /odgs/:id        DELETE    Delete a particular dog, then redirect
 * Add the comment new and create routes
 * Add the new comment form
 
- 
+
 # Comment New/Create
 * Discuss nested routes
     * campgrounds/:id/comments/new  GET
@@ -84,8 +72,8 @@ DESTROY  /odgs/:id        DELETE    Delete a particular dog, then redirect
 # Finish Styling Show Page
 * Add public directory
 * Add custom stylesheet
- 
-<!--### Authorization-->
+
+### Authorization
 
 # Auth Pt. 1 Add User Model
 * Install all packages needed for auth
@@ -105,8 +93,8 @@ DESTROY  /odgs/:id        DELETE    Delete a particular dog, then redirect
 * Prevent user from adding a comment if not signed in
 * Add links to navbar
 
-# uth Pt. 5 Logout/Navbar
-* Show/Hide auth links in navbar correctly 
+# Auth Pt. 5 Logout/Navbar
+* Show/Hide auth links in navbar correctly
 
 ## Refactor The Routes
 * Use Express router to reorganize all routes
@@ -139,9 +127,8 @@ DESTROY  /odgs/:id        DELETE    Delete a particular dog, then redirect
 * Add Edit route for comments
 * Add Edit Comment button
 * Add Update Comment route
-
-<!-- /campgrounds/:id/edit --> req.params.id + /edit
-<!-- /campgrounds/:id/comments/:comment_id/edit--> req.params.comment_id
+  <!-- /campgrounds/:id/edit --> req.params.id + /edit
+  <!-- /campgrounds/:id/comments/:comment_id/edit--> req.params.comment_id
 
 # Deleting Comments
 * Add Destroy Route
@@ -159,3 +146,14 @@ DESTROY  /odgs/:id        DELETE    Delete a particular dog, then redirect
 * Demo working version
 * Install and configure connect-flash
 * Add boostrap alerts to header
+
+# RESTFUL ROUTES
+name     url              verb      Description
+==============================================
+INDEX    /dogs            GET       Dsiplay a list of all dogs
+NEW      /dogs/new        GET       Displays form to make a new dog
+CREATE   /dogs            POST      Add new dog to DB
+SHOW     /dogs/:id        GET       Shows info about one dog
+EDIT     /dogs/:id/edit   GET       Shows edit form for specific ID
+UPDATE   /dogs/:id        PUT       Updates a dog, then redirects
+DESTROY  /odgs/:id        DELETE    Delete a particular dog, then redirect
